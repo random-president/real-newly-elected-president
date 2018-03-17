@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A random president</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="list">
+        <ul>
+            <li>Sergey Baburin.</li>
+            <li>Pavel Grudinin.</li>
+            <li>Vladimir Zhirinovsky.</li>
+            <li>Vladimir Putin.</li>
+            <li>Ksenia Sobchak.</li>
+            <li>Maxim Suraykin.</li>
+            <li>Boris Titov.</li>
+            <li>Grigory Yavlinsky.</li>
+        </ul>
+    </div>
+    <script>
+        things = $('#list li:contains("Putin")');
+        $(things[Math.floor(Math.random()*things.length)]).css('color', 'red')
+    </script>
+</body>
+</html>
